@@ -3,7 +3,7 @@ from .models import Categoria, Transacao
 # Register your models here.
 
 class ProdutoAdmin(admin.ModelAdmin):
-    list_display = ('descricao', 'data', 'valor','observacoes','categorias')
+    list_display = ('descricao','unidades', 'data', 'valor','observacoes','categorias',)
 
 
 admin.site.register(Categoria)
